@@ -1,0 +1,37 @@
+body {
+  background-color: palevioletred;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+#my_id {
+  color: white;
+}
+
+#id3 {
+  color: thistle;
+}
+
+#id4 {
+  color: lightpink;
+}
+
+#id5 {
+  color: lightsalmon;
+}
+
+#id6 {
+  color: navajowhite;
+}
+
+#id7 {
+  color: paleturquoise;
+}
+
+/* Classes start here */
+.my_class {
+  color: wheat;
+}
