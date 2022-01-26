@@ -1,15 +1,101 @@
+/* * {
+  border: 1px solid green;
+} */
 body {
-  background-color: blanchedalmond;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url('/2_week/1_task/img/dave-hoefler-PEkfSAxeplg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
 header {
   background-color: brown;
 }
 
 header nav a {
-  color: white;
   text-decoration: none;
+  color: white;
+  margin-right: 10px;
 }
 header ul li {
   display: inline-block;
+}
+header nav img {
+  max-width: 800px;
+  max-height: 500px;
+}
+.container {
+  min-width: 20px;
+  max-width: 800px;
+}
+/* Table */
+table {
+  background-color: white;
+}
+/* tr:first-child {
+  background-color: green;
+} */
+
+table,
+th,
+td {
+  /*border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  */
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 8px;
+}
+th {
+  border-bottom-width: 2px;
+  background-color: orange;
+  color: white;
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(255, 242, 217);
+}
+/* Boxes */
+#boxes_1,
+#boxes_2,
+#boxes_3,
+#boxes_4,
+#boxes_5 {
+  width: 100px;
+  height: 100px;
+  background-color: indigo;
+  display: inline-block;
+}
+
+#boxes_1 {
+  border: 4px dotted white;
+}
+
+#boxes_2 {
+  border: 5px ridge white;
+  background-color: rgb(108, 130, 255);
+}
+
+#boxes_3 {
+  border: 5px inset;
+  background-color: gray;
+  border-top-color: green;
+  border-bottom-color: blue;
+  border-right-color: yellow;
+  border-left-color: red;
+}
+
+#boxes_4 {
+  border: 4px dashed white;
+  border-radius: 5px;
+  background-color: rgb(181, 211, 125);
+}
+#boxes_5 {
+  border: 2px dotted white;
+  border-radius: 50%;
+  background-color: orange;
 }
