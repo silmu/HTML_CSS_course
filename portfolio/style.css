@@ -11,8 +11,8 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
 
-  background: url('../img/jj-ying-7JX0-bfiuxQ-unsplash.jpg') no-repeat fixed
-    center center/cover;
+  background: url('../img/nasa-Yj1M5riCKk4-unsplash.jpg') no-repeat fixed center
+    center/cover;
   --oxford-blue: #030027ff;
   --light-slate-gray: #648ca6ff;
 }
@@ -25,6 +25,7 @@ body {
 }
 
 .container img {
+  display: inline-block;
   padding: 10px 0px;
   height: 250px;
 }
@@ -64,29 +65,7 @@ header nav a:hover {
   color: #f89dc0;
 }
 
-/* Footer */
-footer,
-footer a {
-  background-color: #030027ff;
-  text-align: center;
-  font-weight: 300;
-  color: #648ca6ff;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-}
-footer a {
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #f89dc0;
-}
-footer .copyright {
-  padding: 20px 20px;
-  font-weight: 500;
-}
-
+/* Projects */
 #projects,
 #about_me,
 #skills,
@@ -97,4 +76,27 @@ footer .copyright {
 #about_me,
 #bch {
   background-color: rgb(100, 140, 166, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #030027ff;
+  font-weight: lighter;
+  text-align: center;
+  color: #648ca6ff;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer a {
+  font-weight: lighter;
+  color: #648ca6ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #f89dc0;
+}
+footer .copyright {
+  padding: 20px 20px;
 }
