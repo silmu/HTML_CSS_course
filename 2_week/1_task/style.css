@@ -12,17 +12,24 @@ body {
   background-position: center center;
   background-size: cover; */
 
-  background: url('/2_week/1_task/img/nordwood-themes-R53t-Tg6J4c-unsplash.jpg')
-    no-repeat fixed center center/cover;
+  background: url('/img/dave-hoefler-PEkfSAxeplg-unsplash.jpg') no-repeat fixed
+    center center/cover;
 }
 .container {
   max-width: 800px;
   background-color: white;
-  padding: 0 20px;
+  padding: 5px 20px;
   margin: 0 auto;
 }
+img {
+  padding: 10px 0px;
+}
+/* Header */
 header {
   background-color: brown;
+  max-width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 header nav a {
@@ -30,6 +37,7 @@ header nav a {
   color: white;
   margin-right: 10px;
 }
+
 header ul li {
   display: inline-block;
 }
@@ -38,9 +46,13 @@ header nav img {
   max-height: 500px;
 }
 
+h1 {
+  color: rgb(102, 16, 1);
+}
+
 /* Table */
 table {
-  background-color: white;
+  background-color: rgb(255, 251, 245);
 }
 /* tr:first-child {
   background-color: green;
@@ -55,12 +67,13 @@ td {
   */
   border: 1px solid white;
   border-collapse: collapse;
-  padding: 8px;
+  padding: 8px 20px 8px 5px;
 }
 th {
   border-bottom-width: 2px;
   background-color: orange;
   color: white;
+  text-align: left;
 }
 
 tr:nth-child(2n) {
