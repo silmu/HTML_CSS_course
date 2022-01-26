@@ -1,3 +1,8 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +19,7 @@ strong {
 }
 
 div {
-  background-image: url("https://redpandanetwork.org/files/_cache/98639e9677778d08988291f0ba4c1824.jpeg");
+  background-image: url('https://redpandanetwork.org/files/_cache/98639e9677778d08988291f0ba4c1824.jpeg');
   height: 200px;
   width: 200px;
   line-height: 200px;
