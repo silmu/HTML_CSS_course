@@ -1,0 +1,15 @@
+body {
+  background-color: blanchedalmond;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+  background-color: brown;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+header ul li {
+  display: inline-block;
+}
