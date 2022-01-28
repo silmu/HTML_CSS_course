@@ -2,7 +2,7 @@
   padding: 0px;
   margin: 0px;
   scroll-behavior: smooth;
-  /* border: 1px solid green; */
+  /* border: 1px solid rgb(187, 187, 187); */
 }
 body {
   background-color: aliceblue;
@@ -18,15 +18,14 @@ body {
 }
 .container {
   text-shadow: 1px 1px 1px rgb(33, 37, 41, 0.2);
-  max-width: 800px;
   background-color: #fff;
   padding: 5px 0px;
+  max-width: 800px;
   margin: 0px auto;
 }
 
 .container img {
   display: inline-block;
-  padding: 10px 0px;
   height: 250px;
 }
 
@@ -70,12 +69,26 @@ header nav a:hover {
 #about_me,
 #skills,
 #bch {
+  text-indent: 1rem;
   padding: 20px;
+  min-height: 300px;
 }
 
 #about_me,
 #bch {
   background-color: rgb(100, 140, 166, 0.2);
+}
+
+#projects img,
+#skills img {
+  padding-right: 20px;
+  float: left;
+}
+
+#about_me img,
+#bch img {
+  padding-left: 20px;
+  float: right;
 }
 
 /* Footer */
