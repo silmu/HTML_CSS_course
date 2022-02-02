@@ -43,16 +43,16 @@ input {
   display: block;
   text-transform: uppercase;
   font-size: 70%;
-  background-color: #f37e53;
+  background-color: #ff7f50;
   color: white;
-  border: 1px solid #f37e53;
+  border: 1px solid #ff7f50;
   border-radius: 5px;
   padding: 8px 70px;
   margin: 20px auto;
 }
 a {
   text-decoration: none;
-  color: #f37e53;
+  color: #ff7f50;
 }
 .policy {
   font-size: 75%;
