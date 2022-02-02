@@ -1,0 +1,23 @@
+body {
+  background-color: #32573f;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+.container {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px 10px;
+}
+h1 {
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  color: #f37e53;
+}
+footer {
+  max-width: 500px;
+  margin: 20px auto;
+}
