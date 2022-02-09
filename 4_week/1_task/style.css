@@ -1,0 +1,46 @@
+body {
+  background-color: antiquewhite;
+}
+h1::after {
+  content: 'Cool text from CSS';
+}
+
+/* Media Queries */
+
+/* Large devices (large desktops, up to 1200 px) */
+@media (max-width: 1200px) {
+  body {
+    background-color: rgb(224, 197, 162);
+  }
+  h1::after {
+    content: 'This is up to 1200px';
+  }
+}
+/* Large devices (tablets, up to 992px) */
+@media (max-width: 992px) {
+  body {
+    background-color: rgb(190, 156, 112);
+  }
+  h1::after {
+    content: 'This is up to 992px';
+  }
+}
+/* Small devices (landscape phones, 768px and up to next breakpoint) */
+@media (max-width: 768px) {
+  body {
+    background-color: rgb(153, 117, 69);
+  }
+  h1::after {
+    content: 'This is up to 768px';
+  }
+}
+/* Small devices (landscape phones, 576px and up to next breakpoint) */
+@media (max-width: 576px) {
+  body {
+    background-color: rgb(54, 35, 10);
+    color: white;
+  }
+  h1::after {
+    content: 'This is up to 576px';
+  }
+}

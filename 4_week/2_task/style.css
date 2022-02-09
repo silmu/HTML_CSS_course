@@ -1,0 +1,52 @@
+body {
+  background-color: aquamarine;
+}
+
+h1::after {
+  content: 'Some cool stuff';
+}
+
+/* Media Queries */
+
+/* Small devices (landscape phones, 576px and up to next breakpoint) */
+
+@media (min-width: 576px) {
+  body {
+    background-color: rgb(97, 228, 184);
+  }
+
+  h1::after {
+    content: 'Mobile 576-767px';
+  }
+}
+/* Small devices (landscape phones, 768px and up to next breakpoint) */
+@media (min-width: 768px) {
+  body {
+    background-color: rgb(56, 177, 137);
+  }
+
+  h1::after {
+    content: 'Mobile 768-992px';
+  }
+}
+/* Large devices (tablets, up to 992px) */
+@media (min-width: 992px) {
+  body {
+    background-color: rgb(28, 134, 99);
+  }
+
+  h1::after {
+    content: 'Mobile 992-1199px';
+  }
+}
+/* Large devices (large desktops, up to 1200px) */
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(3, 77, 52);
+    color: white;
+  }
+
+  h1::after {
+    content: 'Mobile 1200px and up';
+  }
+}
