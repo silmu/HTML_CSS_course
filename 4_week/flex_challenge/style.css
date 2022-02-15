@@ -4,6 +4,9 @@
   box-sizing: border-box;
   border: 1px solid rgb(255, 255, 255);
 }
+body {
+  width: auto;
+}
 header {
   display: flex;
   justify-content: space-between;
