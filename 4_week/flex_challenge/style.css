@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+header h1 {
+  background-color: yellow;
+  flex: 1;
+}
+/* Navigation */
+header nav {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+header nav ul {
+  background-color: pink;
+  padding: 10px;
+  width: 100%;
+}
+/* Main */
+main {
+  display: flex;
+  justify-content: space-between;
+}
+/* Article */
+article {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+
+  /* Article takes 4 parts of the screen */
+}
+article h2 {
+  display: flex;
+  align-content: stretch;
+  background-color: gray;
+  height: 8vh;
+}
+article .sections {
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+}
+.section_left {
+  display: flex;
+  flex: 1;
+  /* Left section takes 1 part of the article */
+  background-color: lightgreen;
+  align-self: stretch;
+}
+.section_right {
+  display: flex;
+  flex: 3;
+  /* right section takes 3 parts of the article */
+  flex-direction: column;
+}
+.section_right > *:first-child {
+  background-color: lightgrey;
+  height: 50%;
+}
+.section_right > *:last-child {
+  background-color: yellow;
+  height: 50%;
+}
+
+/* Aside - on the right */
+aside {
+  display: flex;
+  flex: 1;
+  /* Aside takes 1 part of the screen */
+  flex-direction: column;
+}
+.side_bar {
+  background-color: orange;
+  flex: 1;
+}
+.ads {
+  background-color: green;
+  flex: 1;
+}
+.other {
+  background-color: violet;
+  flex: 1;
+}
+/* Footer */
+footer {
+  background-color: maroon;
+  height: 20vh;
+  color: white;
+}
