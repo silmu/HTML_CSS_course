@@ -1,0 +1,145 @@
+* {
+  background-color: aliceblue;
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid green; */
+}
+
+body {
+  background-color: bisque;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  position: relative;
+}
+a {
+  color: teal;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover,
+h1:hover {
+  color: violet;
+  text-decoration: underline;
+  /* cursor: copy;*/
+  cursor: progress;
+  /* cursor: pointer; */
+  /* cursor: hand; */
+  /* cursor: help; */
+}
+a:focus {
+  background-color: yellow;
+}
+a:visited {
+  color: purple;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: teal;
+  margin: 1rem;
+  border: 1px solid violet;
+}
+.box:hover {
+  border-radius: 50%;
+  background-color: violet;
+}
+/* Children. To select this way you need to wrap all p in a parent div(.children). 
+So it would start counting from div */
+.children {
+  border: 1px solid teal;
+}
+.children p:nth-child(1) {
+  background-color: yellow;
+}
+.children p:nth-child(3) {
+  color: red;
+}
+/* Every even child is selected */
+.children p:nth-child(even) {
+  color: blue;
+}
+/* Every odd child is selected */
+.children p:nth-child(odd) {
+  text-decoration: line-through;
+}
+/*Every third child is selected */
+.children p:nth-child(3n) {
+  font-weight: bold;
+}
+/*Every second child starting from 4th is selected */
+.children p:nth-child(2n + 4) {
+  background-color: yellowgreen;
+}
+/* Pseudo elements */
+h1::before {
+  /* content: 'Before h1'; */
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: yellowgreen;
+  display: block; /*By default it's an inline element */
+  border-radius: 50%;
+}
+
+h1::after {
+  /* content: 'After h1'; */
+  content: '';
+  height: 50px;
+  width: 20px;
+  background-color: teal;
+  display: block; /*By default it's an inline element */
+  border-radius: 50%;
+}
+
+/* Boxes with different positions */
+.absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.sticky {
+  position: sticky;
+  bottom: 10px;
+}
+.relative {
+  position: relative;
+  left: 80px;
+}
+.material-icons {
+  color: rgb(195, 0, 255);
+}
+/* Modal */
+/* .modal {
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  height: 100px;
+  width: 350px;
+  top: 25vh;
+  left: 25vw;
+}
+.button-x {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  text-align: center;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+}
+.modal button {
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+  padding: 10px 40px;
+  background-color: lightgray;
+  border-radius: 10px;
+} */
