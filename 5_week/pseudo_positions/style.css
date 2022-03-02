@@ -21,11 +21,15 @@ a:hover,
 h1:hover {
   color: violet;
   text-decoration: underline;
-  /* cursor: copy;*/
-  cursor: progress;
+  /* cursor: copy; */
+  /* cursor: progress; */
   /* cursor: pointer; */
   /* cursor: hand; */
   /* cursor: help; */
+  /* cursor: grabbing; */
+  /* cursor: crosshair; */
+  /* cursor: context-menu; */
+  /* cursor: grab; */
 }
 a:focus {
   background-color: yellow;
@@ -115,7 +119,7 @@ h1::after {
   color: rgb(195, 0, 255);
 }
 /* Modal */
-/* .modal {
+.modal {
   border: 1px solid gray;
   border-radius: 10px;
   background-color: white;
@@ -142,4 +146,4 @@ h1::after {
   padding: 10px 40px;
   background-color: lightgray;
   border-radius: 10px;
-} */
+}
