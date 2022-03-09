@@ -1,14 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;700&display=swap');
 
 :root {
-  --bg-color: paleturquoise;
-  --primary-color: aliceblue;
+  --bg-color: beige;
+  --primary-color: white;
   --font: 'Spartan', sans-serif;
 }
 
 body {
-  background-color: var(--bg-color);
+  background: linear-gradient(to right, var(--bg-color), rgb(189, 218, 131))
+    no-repeat fixed;
   font-family: var(--font);
+}
+
+.box {
+  height: 50px;
+  width: 300px;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+/* @keyframes myAnimation {
+  from {
+    background-color: aqua;
+    left: 0;
+  }
+  to {
+    background-color: violet;
+    left: 50%;
+  }
+} */
+
+@keyframes myAnimation {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 300px;
+  }
+  50% {
+    top: 300px;
+    left: 300px;
+  }
+  75% {
+    top: 300px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.box:hover {
+  /* transform: scale(1); */
+
+  /* transform: scale(80%); */
+  /* transform: skew(-5deg, 5deg); */
+  /* transform: translate(10px, 2px); */
+  /* transform: perspective(500px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  transition: all 2s; */
+  animation-play-state: paused;
+}
+
+h1 {
+  text-shadow: 0 0 10px rgb(118, 163, 27);
+  color: var(--bg-color);
+}
+
+.fa-leaf {
+  font-size: 2rem;
+  color: yellowgreen;
+  text-shadow: none;
 }
 
 .grid {
@@ -18,10 +88,44 @@ body {
 }
 
 .card {
-  background-color: var(--primary-color);
+  /* background-image: radial-gradient(
+    circle at 50%,
+    rgb(205, 255, 106) 60%,
+    yellowgreen
+  ); */
   border-radius: 5px;
   min-height: 100px;
+  max-width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: inset 0 0 3px rgb(118, 163, 27), 0 0 3px yellowgreen;
+  overflow: hidden;
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  filter: grayscale(100%);
+}
+
+.card:hover {
+  box-shadow: 0 0 10px yellowgreen;
+  background-image: none;
+  background-color: yellowgreen;
+  /* transition-property: background-color; */
+  /* transition-property: all;
+  transition-duration: 0.5s; */
+  /* transition-delay: 0.5s; */
+  transition: all 0.5s;
+}
+
+.card img:hover {
+  filter: grayscale(0);
+  /* transition-property: all;
+  transition-duration: 0.5s; */
+  transform: scale(1.2);
+  transition: all 1s;
 }
